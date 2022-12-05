@@ -16,9 +16,13 @@ jobs:
  # Checks-out your repository under $GITHUB_WORKSPACE, so your 2 INTÉGRATION CONTINUE  job can access it
       - name: continous
         run: echo 'workflow lancé'
- # un truc
+ # Un truc
       - name: intégration
         run: |
          sudo apt-get update
          sudo apt-get install -y nginx
          ls -a
+ # Test
+      - name: test
+        run: (test -f index.html && echo 'index présent') || echo
+         'index manquant
