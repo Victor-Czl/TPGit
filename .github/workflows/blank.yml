@@ -25,4 +25,4 @@ jobs:
  # Test
       - name: test
         run: (test -f index.html && echo 'index présent') || echo
-         'index manquant
+         'index manquant'
